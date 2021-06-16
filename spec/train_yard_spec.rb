@@ -38,6 +38,6 @@ RSpec.describe TrainYard do
     it 'has readable attributes' do
       expect(@train_yard.trains).to eq([@train1, @train2, @train3, @train4])
     end 
-  end 
+  end
 end 
  

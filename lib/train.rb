@@ -18,4 +18,10 @@ class Train
       cargo[car] = num
     end 
   end 
+
+  def weight
+    @cargo.sum do |key, value|
+        value * key.weight
+    end 
+  end 
 end 
