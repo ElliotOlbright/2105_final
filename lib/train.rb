@@ -10,4 +10,9 @@ class Train
   def count_cars(car)
     @cargo.values.sum
   end 
+
+  def add_cars(car, num)
+    cargo[car] = num
+  end 
+
 end 
