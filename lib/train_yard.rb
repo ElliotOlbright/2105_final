@@ -13,6 +13,11 @@ class TrainYard
      trains = @trains.reduce([]) { |acc, train| acc << train.type }
      trains.uniq.sort
   end
-
-
+  
+  def trains_containing(car)
+    @trains.reduce([]) do |acc, train| 
+      acc << train if train.cargo.include?(car)
+      acc
+    end 
+  end
 end 
