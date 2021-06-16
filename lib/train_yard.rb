@@ -21,5 +21,13 @@ class TrainYard
     end 
   end
 
-  
+  def sorted_cargo_list
+    types = []
+    @trains.each do |train|
+      train.cargo.each do |car, num|
+        types << car.type
+      end
+    end  
+    types.uniq.sort
+  end
 end 

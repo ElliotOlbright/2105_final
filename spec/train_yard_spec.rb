@@ -74,6 +74,7 @@ RSpec.describe TrainYard do
     it 'can sort cargo by type' do
       expect(@train_yard.sorted_cargo_list).to eq(['Cattle', 'Dining', 'Mail'])
     end
+  end 
   
 end 
  
