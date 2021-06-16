@@ -9,5 +9,10 @@ class TrainYard
     @trains.push(train)
   end 
 
+  def type_of_trains
+     trains = @trains.reduce([]) { |acc, train| acc << train.type }
+     trains.uniq.sort
+  end
+
 
 end 
