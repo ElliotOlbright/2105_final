@@ -47,6 +47,10 @@ RSpec.describe Train do
 
       expect(@train1.cargo).to eq ({@car1 => 5, @car2 => 10})
     end 
-    
+
+    it 'can addd weight' do 
+      expect(@train1.weight).to eq(27)
+    end 
+  
   end
 end
