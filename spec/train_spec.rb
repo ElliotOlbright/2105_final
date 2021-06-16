@@ -7,9 +7,9 @@ require './lib/train'
 RSpec.describe Train do
   describe 'Object Creation' do
     before :each do
-      car1 = Car.new({type: 'Mail', weight: 5})
-      car2 = Car.new({type: 'Passengers', weight: 1})
-      train1 = Train.new({name: 'Thomas', type: 'Tank'})
+      @car1 = Car.new({type: 'Mail', weight: 5})
+      @car2 = Car.new({type: 'Passengers', weight: 1})
+      @train1 = Train.new({name: 'Thomas', type: 'Tank'})
     end
 
     it 'exists do' do

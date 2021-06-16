@@ -17,7 +17,6 @@ RSpec.describe Car do
     it 'has readable attributes' do
       expect(@car1.type).to eq('Mail')
       expect(@car1.weight).to eq(5)
-
     end 
   end
 end
