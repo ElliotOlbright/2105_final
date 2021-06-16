@@ -22,4 +22,21 @@ RSpec.describe Train do
       expect(@train1.cargo).to eq({})
     end 
   end
+  
+  describe 'Object Methods' do 
+    before :each do
+      @car1 = Car.new({type: 'Mail', weight: 5})
+      @car2 = Car.new({type: 'Passengers', weight: 1})
+      @train1 = Train.new({name: 'Thomas', type: 'Tank'})
+    end
+
+    it ' can count cars' do 
+      expect(@train1.count_cars(@car1)).to eq(0)
+
+      @train1.add_cars(@car1, 2)
+
+      expect(@train1.count_cars(@car1)).to eq(2)
+    end 
+    
+  end
 end
