@@ -4,4 +4,8 @@ class TrainYard
     @location = data_hash[:location]
     @trains = []
   end 
+
+  def add_train(train)
+    @trains.push(train)
+  end 
 end 
